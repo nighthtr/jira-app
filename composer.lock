@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+    "content-hash": "71c755bd3ccf7863199cef19f9043ac3",
     "packages": [
         {
             "name": "brick/math",
@@ -1961,6 +1961,50 @@
                 "source": "https://github.com/nette/utils/tree/v3.2.8"
             },
             "time": "2022-09-12T23:36:20+00:00"
+        },
+        {
+            "name": "nighthtr/jira-package",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nighthtr/jira-package.git",
+                "reference": "16aabf193caca041648abfd247bba79426760265"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nighthtr/jira-package/zipball/16aabf193caca041648abfd247bba79426760265",
+                "reference": "16aabf193caca041648abfd247bba79426760265",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^9.19",
+                "php": "^8.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Nighthtr\\Jira\\JiraServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nighthtr\\Jira\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Ivan Timofeev",
+                    "email": "nighthtr@gmail.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/nighthtr/jira-package/tree/master",
+                "issues": "https://github.com/nighthtr/jira-package/issues"
+            },
+            "time": "2022-12-18T15:33:05+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -7828,11 +7872,13 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "nighthtr/jira-package": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.0.2"
+        "php": "^8.1"
     },
     "platform-dev": [],
     "plugin-api-version": "2.2.0"
